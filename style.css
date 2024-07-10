@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f3f4f6; /* Light grey background */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #333; /* Dark grey text color */
+  }
+  
+  .container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    margin: 20px 0;
+    font-size: 3rem;
+    color: #5d5c61; /* Dark slate grey for the heading */
+  }
+  
+  .game {
+    display: grid;
+    grid-template-columns: repeat(3, 18vmin);
+    grid-template-rows: repeat(3, 18vmin);
+    gap: 1.5vmin;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf2f7; /* Light blue-grey for the boxes */
+    border-radius: 1rem;
+    border: 2px solid #ccc; /* Light grey border */
+    font-size: 8vmin;
+    color: #2b7a78; /* Teal color for text */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .box:hover {
+    background-color: #def2f1; /* Slightly darker teal */
+    transform: scale(1.05);
+  }
+  
+  #reset-btn,
+  #new-btn {
+    margin: 20px 10px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #2b7a78; /* Teal background for buttons */
+    color: #fff; /* White text color */
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #reset-btn:hover,
+  #new-btn:hover {
+    background-color: #3aa7a3; /* Lighter teal for hover state */
+    transform: scale(1.05);
+  }
+  
+  .msg-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .msg-container p {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #fff; /* White text for the message */
+  }
+  
+  .hide {
+    display: none;
+  }
+  
